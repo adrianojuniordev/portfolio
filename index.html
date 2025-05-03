@@ -1,146 +1,162 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adriano Proetti | Portfólio Power Platform</title>
+  <title>Adriano Junior - Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
+      margin: 40px;
+      line-height: 1.6;
     }
-    header {
-      background: #3b3b98;
-      color: white;
-      padding: 2rem;
-      text-align: center;
+    h1, h2 {
+      color: #333;
     }
-    nav {
-      text-align: center;
-      background: #23235b;
-      padding: 0.5rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      margin-bottom: 2rem;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .card img {
-      max-width: 100%;
-      border-radius: 4px;
-    }
-    footer {
-      text-align: center;
-      background: #3b3b98;
-      color: white;
-      padding: 1rem;
-    }
-    .lang-switch {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .lang-switch button {
-      background: #23235b;
-      color: white;
-      padding: 10px 20px;
-      border: none;
+    button {
+      margin-right: 10px;
+      padding: 8px 16px;
+      font-size: 14px;
       cursor: pointer;
-      font-weight: bold;
-      margin: 0 10px;
+    }
+    .lang-section {
+      display: none;
+    }
+    .active {
+      display: block;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1 id="name">Adriano Proetti Custodio Junior</h1>
-  <p id="specialization">Especialista em Power Platform • Power Apps | Power Automate | Power BI</p>
-</header>
-
-<nav>
-  <a href="#sobre" id="link-sobre">Sobre mim</a>
-  <a href="#projetos" id="link-projetos">Projetos</a>
-  <a href="#contato" id="link-contato">Contato</a>
-</nav>
-
-<section id="sobre" class="section">
-  <h2 id="about-title">Sobre mim</h2>
-  <p id="about-text">Sou Engenheiro de Materiais formado pela UNIFEI, com MBA em Gestão de Negócios pela USP/Esalq. Atuo como desenvolvedor Power Platform com experiência sólida em Power Apps, Power Automate e Power BI. Tenho certificações Microsoft (AI-900, PL-900 e PL-100) e já atuei em empresas como a Vale, além de desenvolver soluções com HTML, SharePoint, API e integração de dados.</p>
-</section>
-
-<section id="projetos" class="section">
-  <h2 id="projects-title">Projetos em Power Platform</h2>
-
-  <div class="card">
-    <h3>Automação de envio de e-mails para distritos escolares</h3>
-    <p>Automação criada com Power Automate, Forms, OpenAI e a API Geocod.io. O processo realiza coleta de dados via Forms, identifica o distrito escolar via geolocalização e envia e-mails personalizados automaticamente.</p>
-    <p><strong>Tecnologias:</strong> Power Automate, Forms, OpenAI API, HTTP Requests</p>
+  <h1>Adriano Proetti Custodio Junior</h1>
+  <p>📍 Catanduva, SP - 📧 jnn-@live.com - 📞 +55 17 99143-7213</p>
+  <div>
+    <button onclick="switchLang('en')">🇺🇸 English</button>
+    <button onclick="switchLang('pt')">🇧🇷 Português</button>
   </div>
 
-  <div class="card">
-    <h3>Aplicativo de Reembolsos com HTML e Anexos</h3>
-    <p>Aplicativo no Power Apps conectado ao SharePoint, com interface para submissão de reembolsos. Gera relatórios em HTML e envia automaticamente por e-mail com anexos integrados.</p>
-    <p><strong>Tecnologias:</strong> Power Apps, Power Automate, HTML, SharePoint</p>
+  <!-- English Section -->
+  <div id="en" class="lang-section">
+    <h2>Work Experience</h2>
+    <h3>Power Platform Developer</h3>
+    <p>Project development using Power Platform: Power Automate, Power Apps, SharePoint, SQL, and Power BI.</p>
+    <ul>
+      <li>Approval flows using Power Automate</li>
+      <li>File management with Power Apps and SharePoint</li>
+      <li>Standardized documents using Word templates</li>
+      <li>Offline features in Power Apps</li>
+      <li>JSON records and HTML layout creation</li>
+      <li>Notifications (scheduled, immediate, recurring)</li>
+    </ul>
+
+    <h3>SharePrime Consulting – 05/2023 (Remote, Celesc)</h3>
+    <ul>
+      <li>Home Office Requests – Web application</li>
+      <li>Legal Agreements – Document creation and signing</li>
+      <li>Audit Control – Monitoring service instructions</li>
+      <li>Overtime Authorization – Web/Mobile app with SAP</li>
+    </ul>
+
+    <h3>Dadoteca Consulting – 04/2022 (Remote, BAT)</h3>
+    <ul>
+      <li>Building Tomorrow – Bonus and evaluation system</li>
+      <li>Claims – Merchandise claim tracking</li>
+      <li>TAX – Power BI tax calculation tool</li>
+      <li>Refund Requests – Approval flows with notifications</li>
+    </ul>
+
+    <h3>Progen SA – 09/2021–05/2022 (Santa Bárbara, MG)</h3>
+    <ul>
+      <li>BI development and data analysis dashboards</li>
+      <li>Apps and flows for management automation</li>
+      <li>Kaizen projects: Availability Dashboards, Cost Mgmt, etc.</li>
+    </ul>
+
+    <h3>Vale SA – 01/2018–12/2018 (Itabira, MG)</h3>
+    <ul>
+      <li>Crushing maintenance & KPI tracking with Power BI</li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+      <li>Data Analyst, Data Science Academy (2022)</li>
+      <li>MBA in Business Management, USP/ESALQ (2020–2021)</li>
+      <li>BSc in Materials Engineering, UNIFEI (2013–2018)</li>
+    </ul>
+
+    <h2>Certifications & Skills</h2>
+    <ul>
+      <li>BIFPC™, SFPC™ – CertiProf</li>
+      <li>AI-900, PL-900, PL-100 – Microsoft</li>
+      <li>Intermediate English (in progress)</li>
+    </ul>
   </div>
 
-</section>
+  <!-- Portuguese Section -->
+  <div id="pt" class="lang-section">
+    <h2>Experiência Profissional</h2>
+    <h3>Desenvolvedor Power Platform</h3>
+    <p>Desenvolvimento de projetos com Power Platform: Power Automate, Power Apps, SharePoint, SQL e Power BI.</p>
+    <ul>
+      <li>Fluxos de aprovação com Power Automate</li>
+      <li>Gerenciamento de arquivos com Power Apps e SharePoint</li>
+      <li>Geração de documentos com templates do Word</li>
+      <li>Recursos offline em Power Apps</li>
+      <li>Criação de registros JSON e layouts HTML</li>
+      <li>Notificações (agendadas, imediatas e recorrentes)</li>
+    </ul>
 
-<section id="contato" class="section">
-  <h2 id="contact-title">Contato</h2>
-  <p>Email: <a href="mailto:jnn-@live.com">jnn-@live.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/adrianojunior013/" target="_blank">linkedin.com/in/adrianojunior013</a></p>
-  <p>GitHub: <a href="https://github.com/adrianojuniordev/portfolio" target="_blank">github.com/adrianojuniordev</a></p>
-</section>
+    <h3>SharePrime Consulting – 05/2023 (Remoto, Celesc)</h3>
+    <ul>
+      <li>Requisições de trabalho home office – Aplicação WEB</li>
+      <li>Acordos Judiciais – Criação e assinatura de documentos</li>
+      <li>Controle de Auditoria – Monitoramento de instruções</li>
+      <li>Horas Extras – App WEB e Mobile com SAP</li>
+    </ul>
 
-<footer>
-  <p>&copy; 2025 Adriano Proetti. Todos os direitos reservados.</p>
-</footer>
+    <h3>Dadoteca Consulting – 05/2022 (Remoto, BAT)</h3>
+    <ul>
+      <li>Building Tomorrow – Avaliação e bonificação</li>
+      <li>Projeto de Sinistros – Controle de ocorrências</li>
+      <li>TAX – Cálculo de impostos com Power BI</li>
+      <li>Reembolso – Fluxos de aprovação com notificações</li>
+    </ul>
 
-<div class="lang-switch">
-  <button onclick="changeLanguage('pt')">Português</button>
-  <button onclick="changeLanguage('en')">English</button>
-</div>
+    <h3>Progen SA – 09/2021–05/2022 (Santa Bárbara, MG)</h3>
+    <ul>
+      <li>Desenvolvimento BI e dashboards de dados</li>
+      <li>Automação de rotinas com aplicativos e fluxos</li>
+      <li>Projetos Kaizen: Dashboards, Gestão de Custos, etc.</li>
+    </ul>
 
-<script>
-  function changeLanguage(lang) {
-    if (lang === 'pt') {
-      document.getElementById("name").textContent = "Adriano Proetti Custodio Junior";
-      document.getElementById("specialization").textContent = "Especialista em Power Platform • Power Apps | Power Automate | Power BI";
-      document.getElementById("about-title").textContent = "Sobre mim";
-      document.getElementById("about-text").textContent = "Sou Engenheiro de Materiais formado pela UNIFEI, com MBA em Gestão de Negócios pela USP/Esalq. Atuo como desenvolvedor Power Platform com experiência sólida em Power Apps, Power Automate e Power BI. Tenho certificações Microsoft (AI-900, PL-900 e PL-100) e já atuei em empresas como a Vale, além de desenvolver soluções com HTML, SharePoint, API e integração de dados.";
-      document.getElementById("projects-title").textContent = "Projetos em Power Platform";
-      document.getElementById("contact-title").textContent = "Contato";
-      document.getElementById("link-sobre").textContent = "Sobre mim";
-      document.getElementById("link-projetos").textContent = "Projetos";
-      document.getElementById("link-contato").textContent = "Contato";
-    } else if (lang === 'en') {
-      document.getElementById("name").textContent = "Adriano Proetti Custodio Junior";
-      document.getElementById("specialization").textContent = "Power Platform Specialist • Power Apps | Power Automate | Power BI";
-      document.getElementById("about-title").textContent = "About Me";
-      document.getElementById("about-text").textContent = "I am a Materials Engineer graduated from UNIFEI, with an MBA in Business Management from USP/Esalq. I work as a Power Platform developer with solid experience in Power Apps, Power Automate, and Power BI. I have Microsoft certifications (AI-900, PL-900, and PL-100) and have worked at companies like Vale, as well as developing solutions with HTML, SharePoint, API, and data integration.";
-      document.getElementById("projects-title").textContent = "Power Platform Projects";
-      document.getElementById("contact-title").textContent = "Contact";
-      document.getElementById("link-sobre").textContent = "About Me";
-      document.getElementById("link-projetos").textContent = "Projects";
-      document.getElementById("link-contato").textContent = "Contact";
+    <h3>Vale SA – 01/2018–12/2018 (Itabira, MG)</h3>
+    <ul>
+      <li>Manutenção preventiva da britagem e KPIs com Power BI</li>
+    </ul>
+
+    <h2>Formação Acadêmica</h2>
+    <ul>
+      <li>Analista de Dados – Data Science Academy (2022)</li>
+      <li>MBA Gestão de Negócios – USP/ESALQ (2020–2021)</li>
+      <li>Engenharia de Materiais – UNIFEI (2013–2018)</li>
+    </ul>
+
+    <h2>Certificações & Habilidades</h2>
+    <ul>
+      <li>BIFPC™, SFPC™ – CertiProf</li>
+      <li>AI-900, PL-900, PL-100 – Microsoft</li>
+      <li>Inglês Intermediário (em progresso)</li>
+    </ul>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('en').classList.remove('active');
+      document.getElementById('pt').classList.remove('active');
+      document.getElementById(lang).classList.add('active');
     }
-  }
-</script>
-
+    switchLang('pt'); // padrão
+  </script>
 </body>
 </html>
