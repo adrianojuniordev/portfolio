@@ -50,28 +50,41 @@
       color: white;
       padding: 1rem;
     }
+    .lang-switch {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .lang-switch button {
+      background: #23235b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      margin: 0 10px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Adriano Proetti Custodio Junior</h1>
-  <p>Especialista em Power Platform • Power Apps | Power Automate | Power BI</p>
+  <h1 id="name">Adriano Proetti Custodio Junior</h1>
+  <p id="specialization">Especialista em Power Platform • Power Apps | Power Automate | Power BI</p>
 </header>
 
 <nav>
-  <a href="#sobre">Sobre mim</a>
-  <a href="#projetos">Projetos</a>
-  <a href="#contato">Contato</a>
+  <a href="#sobre" id="link-sobre">Sobre mim</a>
+  <a href="#projetos" id="link-projetos">Projetos</a>
+  <a href="#contato" id="link-contato">Contato</a>
 </nav>
 
 <section id="sobre" class="section">
-  <h2>Sobre mim</h2>
-  <p>Sou Engenheiro de Materiais formado pela UNIFEI, com MBA em Gestão de Negócios pela USP/Esalq. Atuo como desenvolvedor Power Platform com experiência sólida em Power Apps, Power Automate e Power BI. Tenho certificações Microsoft (AI-900, PL-900 e PL-100) e já atuei em empresas como a Vale, além de desenvolver soluções com HTML, SharePoint, API e integração de dados.</p>
+  <h2 id="about-title">Sobre mim</h2>
+  <p id="about-text">Sou Engenheiro de Materiais formado pela UNIFEI, com MBA em Gestão de Negócios pela USP/Esalq. Atuo como desenvolvedor Power Platform com experiência sólida em Power Apps, Power Automate e Power BI. Tenho certificações Microsoft (AI-900, PL-900 e PL-100) e já atuei em empresas como a Vale, além de desenvolver soluções com HTML, SharePoint, API e integração de dados.</p>
 </section>
 
 <section id="projetos" class="section">
-  <h2>Projetos em Power Platform</h2>
+  <h2 id="projects-title">Projetos em Power Platform</h2>
 
   <div class="card">
     <h3>Automação de envio de e-mails para distritos escolares</h3>
@@ -85,12 +98,10 @@
     <p><strong>Tecnologias:</strong> Power Apps, Power Automate, HTML, SharePoint</p>
   </div>
 
-  <!-- Você pode adicionar mais cards aqui -->
-
 </section>
 
 <section id="contato" class="section">
-  <h2>Contato</h2>
+  <h2 id="contact-title">Contato</h2>
   <p>Email: <a href="mailto:jnn-@live.com">jnn-@live.com</a></p>
   <p>LinkedIn: <a href="https://www.linkedin.com/in/adrianojunior013/" target="_blank">linkedin.com/in/adrianojunior013</a></p>
   <p>GitHub: <a href="https://github.com/adrianojuniordev/portfolio" target="_blank">github.com/adrianojuniordev</a></p>
@@ -99,6 +110,37 @@
 <footer>
   <p>&copy; 2025 Adriano Proetti. Todos os direitos reservados.</p>
 </footer>
+
+<div class="lang-switch">
+  <button onclick="changeLanguage('pt')">Português</button>
+  <button onclick="changeLanguage('en')">English</button>
+</div>
+
+<script>
+  function changeLanguage(lang) {
+    if (lang === 'pt') {
+      document.getElementById("name").textContent = "Adriano Proetti Custodio Junior";
+      document.getElementById("specialization").textContent = "Especialista em Power Platform • Power Apps | Power Automate | Power BI";
+      document.getElementById("about-title").textContent = "Sobre mim";
+      document.getElementById("about-text").textContent = "Sou Engenheiro de Materiais formado pela UNIFEI, com MBA em Gestão de Negócios pela USP/Esalq. Atuo como desenvolvedor Power Platform com experiência sólida em Power Apps, Power Automate e Power BI. Tenho certificações Microsoft (AI-900, PL-900 e PL-100) e já atuei em empresas como a Vale, além de desenvolver soluções com HTML, SharePoint, API e integração de dados.";
+      document.getElementById("projects-title").textContent = "Projetos em Power Platform";
+      document.getElementById("contact-title").textContent = "Contato";
+      document.getElementById("link-sobre").textContent = "Sobre mim";
+      document.getElementById("link-projetos").textContent = "Projetos";
+      document.getElementById("link-contato").textContent = "Contato";
+    } else if (lang === 'en') {
+      document.getElementById("name").textContent = "Adriano Proetti Custodio Junior";
+      document.getElementById("specialization").textContent = "Power Platform Specialist • Power Apps | Power Automate | Power BI";
+      document.getElementById("about-title").textContent = "About Me";
+      document.getElementById("about-text").textContent = "I am a Materials Engineer graduated from UNIFEI, with an MBA in Business Management from USP/Esalq. I work as a Power Platform developer with solid experience in Power Apps, Power Automate, and Power BI. I have Microsoft certifications (AI-900, PL-900, and PL-100) and have worked at companies like Vale, as well as developing solutions with HTML, SharePoint, API, and data integration.";
+      document.getElementById("projects-title").textContent = "Power Platform Projects";
+      document.getElementById("contact-title").textContent = "Contact";
+      document.getElementById("link-sobre").textContent = "About Me";
+      document.getElementById("link-projetos").textContent = "Projects";
+      document.getElementById("link-contato").textContent = "Contact";
+    }
+  }
+</script>
 
 </body>
 </html>
